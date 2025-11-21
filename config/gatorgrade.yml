@@ -1,0 +1,74 @@
+# check the technical writing for various characteristics
+- writing/reflection.md:
+    - description: Ensure that writing/reflection.md file exists
+      check: ConfirmFileExists
+    # - description: Write a minimum number of meaningful words in the reflection
+    #   check: CountFileWords
+    #   options:
+    #     count: 400
+    #     exact: false
+    - description: ./writing/reflection.md Complete all TODOs, remove the TODO markers
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: ./writing/reflection.md Delete the 'Add Your Name Here' prompts
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+    - description: ./writing/reflection.md Delete the 'Add Your Group Name Here' 
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Group Name Here"
+        count: 0
+        exact: true
+    - description: ./writing/reflection.md Delete the 'Add Your Project Title Here' 
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Project Title Here"
+        count: 0
+        exact: true
+
+
+# check the technical writing for various characteristics
+- src/code.r:
+    - description: ./src/code.r Ensure that file exists
+      check: ConfirmFileExists
+    # - description: Write a minimum number of meaningful words in the proposal
+    #   check: CountFileWords
+    #   options:
+    #     count: 400
+    #     exact: false
+    - description: ./src/code.r Complete all TODOs, remove the TODO markers
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: ./src/code.r Delete the 'Add Your Name Here' prompts
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+    - description: ./src/code.r Delete the 'Add Your Group Name Here' 
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Group Name Here"
+        count: 0
+        exact: true
+    - description: ./src/code.r Delete the 'Add Your Project Title Here' 
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Project Title Here"
+        count: 0
+        exact: true
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (5) in repository
+  check: CountCommits
+  options:
+    count: 5
