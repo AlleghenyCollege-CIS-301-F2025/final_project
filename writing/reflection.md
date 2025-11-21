@@ -9,7 +9,7 @@ Add Your Name Here
 
 ## Group Name
 
-Add Your Name Here
+Add Your Group Name Here
 
 ## Project Title
 
